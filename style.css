@@ -1,0 +1,139 @@
+body{
+    background: black;
+}
+#face{
+    height: 195px;
+    width: 195px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: rgb(19, 241, 230);
+    margin: auto;
+    margin-top: 10px;
+}
+#larm,#rarm{
+    height: 100px;
+    width: 25px;
+    background: rgb(19, 241, 230);
+    margin-top: 15px;
+    border-radius: 50px;
+}
+#center{
+    height: 190px; ;
+    width: 190px;
+    background: rgb(19, 241, 230);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+#body{
+    width: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+
+}
+#leye,#reye{
+    height: 25px;
+    width: 25px;
+    border-radius: 500%;
+    background: black;
+    
+}
+legs{
+    background: rgb(19, 241, 230);
+
+}
+#llegs,#rlegs{
+    height: 100px; ;
+    width: 25px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    background: rgb(19, 241, 230);
+
+}
+#legs{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: -18px;
+}
+#eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 125px;
+}
+#main{
+    height: 530px;
+    width: 320px;
+    border: 3px solid white;
+    margin: auto;
+    margin-top: 80px;
+    background-color: black;
+}
+#main:hover #face{
+    width: 180px; 
+    height: 180px;
+    background: red;
+    border-radius: 40px;
+    animation:change 1s 10;
+}
+@keyframes changeface{
+    0%{
+        transform: rotate(45deg);
+        border-radius: 10%;    
+    }
+    25%{
+        transform: rotate(90deg);
+        border-radius: 20%;
+    }
+    50%{
+        transform: rotate(135deg);
+        border-radius: 30%;
+    }
+    75%{
+        transform: rotate(180deg);
+        border-radius: 40px; 
+    }
+    100%{
+        transform: rotate(225deg);
+        border-radius:50px ;
+    }
+}
+
+#main:hover #larm{
+    animation:changelarm 1s 10;
+    background: rgb(244, 248, 3);
+}
+@keyframes changelarm{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#main:hover #rarm{
+    animation:changelarm 1s 10;
+    background: rgb(244, 248, 3);
+}
+@keyframes changerarm{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#main:hover #center{
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 100px;
+    animation:changecenter 1s 10;
+    background: rgb(248, 3, 3);
+    
+}
